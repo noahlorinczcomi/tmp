@@ -40,7 +40,7 @@ simulation(week=15,
            niter=10000
            )
 ```
-which prints `-9945.45` to the console. This result indicates you are expected to lose ~$10K (all of your bet) if you play this week. The simulation results above suggest you have a better chance of winning money when the pot is smaller, which is very likely to occur at earlier weeks.
+which prints `-9945.45` to the console. This result indicates you are expected to lose ~$10K (all of your bet) if you play this week.
 
 Consider if the current pot is won this week by a QoH and next week (or the next bi-week, whenever they do it) has the new pot of `1754323*0.1`, or `175432.3`. What is the expected return if you play then. Keeping the same proportion of tickets as before?
 ```R
