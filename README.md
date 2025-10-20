@@ -53,3 +53,16 @@ simulation(week=15,
 ```
 which prints `-954.6` and indicates you are expected to lose $954 (all of your bet).
 
+
+### Buying every ticket
+An important fact to remember is that even if you owned all of the tickets your expected winnings is still negative because 10\% of every pot gets rolled over.
+
+You can simulate this condition by running:
+```R
+simulation(week=1,
+           my_tickets=10000,
+           all_tickets=10000,
+           niter=1000
+           )
+```
+which shows expected return of `-1784`. This is almost exactly the theoretical value, which I won't prove.
