@@ -70,4 +70,14 @@ which shows expected return of `-1784`. This is almost exactly the theoretical v
 ### Predicting QoH's most likely week
 You can't: 
 ![](QoH_weeksimres.png)
+This simulation is really simple:
+```R
+niter=100000
+week=c()
+for(i in 1:niter) {
+  deck=newdeck()
+  cards=sample(deck,54,replace=FALSE)
+  week[i]=which(cards=='QH')  
+}
+```
 The QoH is unlikely early and late (unless it hasn't been pulled yet). It is mostly likely to be pulled between weeks ~3 and 51.
