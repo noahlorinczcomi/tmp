@@ -66,3 +66,8 @@ simulation(week=1,
            )
 ```
 which shows expected return of `-1784`. This is almost exactly the theoretical value, which I won't prove.
+
+### Predicting QoH's most likely week
+You can't: 
+![](QoH_weeksimres.png)
+The QoH is unlikely early and late (unless it hasn't been pulled yet). It is mostly likely to be pulled between weeks ~3 and 51.
