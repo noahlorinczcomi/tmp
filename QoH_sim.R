@@ -59,7 +59,7 @@ week=20 # week into the draws. # week non-QHs/jokers will be removed from deck
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
 # simulation varying proportion of initial tickets and total pot size
 my_tix_p=seq(0.01,0.1,0.01)
-numtix=c(1000,5000,10000,25000)
+numtix=c(10000,25000,50000)
 res=matrix(nr=length(my_tix_p),nc=length(numtix))
 for(i in 1:length(my_tix_p)) {
   for(j in 1:length(numtix)) {
